@@ -21,9 +21,10 @@ public class Menu {
 			System.out.println("                                                     ");
 			System.out.println("            1 - Criar Conta                          ");
 			System.out.println("            2 - Listar Menu                          ");
-			System.out.println("            3 - Listar todos os Pedidos              ");
-			System.out.println("            4 - Fazer o pagamento                    ");
-			System.out.println("            5 - Sair                                 ");
+			System.out.println("            3 - Criar Hamburgues Personalizado       ");
+			System.out.println("            4 - Deletar Hamburgues Personalizado     ");
+			System.out.println("            5 - Listar todos os Pedidos              ");
+			System.out.println("            6 - Sair                                 ");
 			System.out.println("                                                     ");
 			System.out.println("_____________________________________________________");
 			System.out.println("Entre com a opção desejada:                          ");
@@ -34,20 +35,24 @@ public class Menu {
 
 				break;
 			case 2:
-				System.out.println("Criar Conta:");
+				System.out.println("Listar Menu:");
 
 				break;
 			case 3:
-				System.out.println("Criar Conta:");
+				System.out.println("Criar Hamburgues Personalizado: ");
 
 				break;
 			case 4:
-				System.out.println("Criar Conta:");
+				System.out.println("Deletar Hamburgues Personalizado:");
 
 				break;
 			case 5:
-				System.out.println("Pedido Finalizado logo será entregue!");
+				System.out.println("Listar todos os Pedidos :");
 
+				break;
+			case 6:
+				System.out.println("Pedido Finalizado logo será entregue!");
+				
 				break;
 
 			default:
