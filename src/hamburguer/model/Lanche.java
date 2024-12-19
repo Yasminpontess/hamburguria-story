@@ -79,22 +79,22 @@ public abstract class Lanche {
 	public float calcularValorTotal() {
 		float valorTotal = this.valor;
 
-		// Supondo que alguns ingredientes adicionais possam aumentar o valor
+		
 		if (this.salada != null && !this.salada.isEmpty()) {
-			valorTotal += 2.0; // Exemplo: adicionar R$2,00 por salada
+			valorTotal += 2.0; 
 		}
 		if (this.molho != null && !this.molho.isEmpty()) {
-			valorTotal += 1.5; // Exemplo: adicionar R$1,50 por molho
+			valorTotal += 1.5; 
 		}
 		if (this.quantidadeR != null && !this.quantidadeR.isEmpty()) {
 			int quantidade = Integer.parseInt(this.quantidadeR);
-			valorTotal += quantidade * 5.0; // Supondo que cada unidade de hambúrguer adicional custa R$5,00
+			valorTotal += quantidade * 5.0; 
 		}
 
 		return valorTotal;
 	}
 
-	// Método para adicionar um ingrediente (aumenta o valor)
+	
 	public void adicionarIngrediente(String ingrediente, float valorAdicional) {
 		switch (ingrediente.toLowerCase()) {
 		case "salada":
@@ -137,13 +137,22 @@ public abstract class Lanche {
 		this.valor -= valorRemovido;
 	}
 
+	public void excluirLanche() {
+        this.pao = null;
+        this.molho = null;
+        this.recheio = null;
+        this.quantidadeR = "0";
+        this.salada = null;
+        this.tipo = 0;
+        this.valor = 0.0f;
+	}
 	
 	public void visualizarHamburguer() {
 		String tipo = "";
 
 		switch (this.tipo) {
 		case 1:
-			tipo = "Lanche Supreme";
+			tipo = "Lanches";
 			break;
 		case 2:
 			tipo = "Combo";

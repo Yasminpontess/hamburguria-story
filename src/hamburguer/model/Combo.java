@@ -4,14 +4,14 @@ public class Combo extends Lanche {
 
 	private String batata;
 	private String refrigerante;
-	private String brownie;
+	private String sobremesa;
 	private float valorAd;
 
 	public Combo(String pao, String molho, String recheio, String quantidadeR, String salada, int tipo,float valor, String batata, String refrigerante, String brownie) {
 		super(pao, molho, recheio, quantidadeR, salada, tipo, valor);
 		this.batata = batata;
 		this.refrigerante = refrigerante;
-		this.brownie = brownie;
+		this.sobremesa = brownie;
 
 	}
 
@@ -32,11 +32,11 @@ public class Combo extends Lanche {
 	}
 
 	public String getBrownie() {
-		return brownie;
+		return sobremesa;
 	}
 
 	public void setBrownie(String brownie) {
-		this.brownie = brownie;
+		this.sobremesa = brownie;
 	}
 
 	@Override
@@ -49,7 +49,7 @@ public class Combo extends Lanche {
 		if (this.refrigerante != null && !this.refrigerante.isEmpty()) {
 			valorTotal += 8.5;
 		}
-		if (this.brownie != null && !this.brownie.isEmpty()) {
+		if (this.sobremesa != null && !this.sobremesa.isEmpty()) {
 			valorTotal += 2.0;
 		}
 
@@ -67,7 +67,7 @@ public class Combo extends Lanche {
 			this.refrigerante = "Sim";
 			break;
 		case "Brownie":
-			this.brownie = "Sim";
+			this.sobremesa = "Sim";
 			break;
 		default:
 			System.out.println("Ingrediente desconhecido!");
@@ -87,7 +87,7 @@ public class Combo extends Lanche {
 			this.refrigerante = null;
 			break;
 		case "Brownie":
-			this.brownie = null;
+			this.sobremesa = null;
 			break;
 
 		default:
@@ -102,7 +102,7 @@ public class Combo extends Lanche {
 		super.visualizarHamburguer();
 		System.out.println("Batata: " + this.batata);
 		System.out.println("Refrigerante: " + this.refrigerante);
-		System.out.println("Brownie: " + this.brownie);
+		System.out.println("Brownie: " + this.sobremesa);
 	}
 
 }

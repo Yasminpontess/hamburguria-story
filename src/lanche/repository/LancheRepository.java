@@ -9,5 +9,7 @@ public interface LancheRepository {
 	public void removerIngrediente(String ingrediente, float valorRemovido);
 
 	public void visualizarHamburguer();
+	
+	public void excluirLanche();
 
 }
