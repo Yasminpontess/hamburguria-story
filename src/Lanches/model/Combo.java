@@ -1,4 +1,4 @@
-package hamburguer.model;
+package Lanches.model;
 
 public class Combo extends Lanche {
 

@@ -23,7 +23,7 @@ public class Menu {
 			System.out.println("            2 - Listar Menu                          ");
 			System.out.println("            3 - Criar Hamburgues Personalizado       ");
 			System.out.println("            4 - Deletar Hamburgues Personalizado     ");
-			System.out.println("            5 - Listar o Pedido                      ");
+			System.out.println("            5 - Listar o Pedido                     ");
 			System.out.println("            6 - Sair                                 ");
 			System.out.println("                                                     ");
 			System.out.println("_____________________________________________________");

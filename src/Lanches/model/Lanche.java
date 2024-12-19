@@ -1,4 +1,4 @@
-package hamburguer.model;
+package Lanches.model;
 
 public abstract class Lanche {
 
